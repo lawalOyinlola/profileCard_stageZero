@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-card" data-testid="profile-card">
+        <div class="theme-toggle">
+          <input type="checkbox" id="theme-switch" />
+          <label for="theme-switch" class="switch-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </label>
+
+          <!-- <input type="checkbox" id="theme-switch" />
+          <label for="theme-switch" class="switch-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </label> -->
+        </div>
+        <div class="card-header">
+          <div class="profile-image-container">
+            <img
+              src="./profile_picture.jpg"
+              alt="Profile Picture"
+              class="profile-picture"
+              data-testid="profilePicture"
+            />
+          </div>
+        </div>
+        <div class="card-body">
+          <h2 class="fullname" data-testid="fullName">
+            Oyinlola Ibrahim Lawal
+          </h2>
+          <p class="job-title" data-testid="jobTitle">Software Engineer</p>
+          <p class="bio" data-testid="shortBio">
+            Frontend developer passionate about crafting intuitive and visually
+            engaging user experiences. Skilled in modern web technologies, UI
+            design, and performance optimization. Always eager to learn,
+            innovate, and build seamless digital experiences.
+          </p>
+          <div class="info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="location" data-testid="currentLocation">
+                Freetown, Sierra Leone
+              </p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p class="email" data-testid="emailAddress">
+                oyinlolalawal1705@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="social-links" data-testid="socialLinks">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="github-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="linkedin-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="twitter-link"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <p class="utc-time" data-testid="currentTimeUTC"></p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/582f5c0c42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
